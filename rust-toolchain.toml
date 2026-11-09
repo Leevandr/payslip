@@ -1,0 +1,6 @@
+# Pinned so the contract builds the same way for everyone. 1.86.0 is the toolchain used by the official
+# near/cargo-near-new-project-template this contract started from.
+[toolchain]
+channel = "1.86.0"
+components = ["rustfmt", "clippy"]
+targets = ["wasm32-unknown-unknown"]

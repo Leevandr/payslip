@@ -1,0 +1,10 @@
+node_modules/
+out/
+.sandbox/
+.env
+.env.*
+!.env.example
+contracts/payroll-commit/target/
+*.private.json
+.DS_Store
+dist/

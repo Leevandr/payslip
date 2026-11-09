@@ -1,0 +1,27 @@
+{
+  "format": "payslip-proof/payslip/v1",
+  "employer": "acme-payroll-e0e6ee.testnet",
+  "run_id": "2026-10",
+  "network": {
+    "name": "testnet",
+    "contract": "payroll-commit-e0e6ee.testnet"
+  },
+  "line": {
+    "employee_account": "hiro-osaka.testnet",
+    "amount_cents": 310000,
+    "currency": "USD",
+    "period": "2026-10",
+    "department": "Operations",
+    "payout_pref": {
+      "chain": "btc",
+      "asset": "BTC"
+    }
+  },
+  "salt": "4f1e2fc44ef8fdb2dbfae86b57740fcda58ac7155e959efe123fe754f49ada08",
+  "proof": [
+    { "side": "left", "hash": "d61ec96642471df58c59289bf4da60d19edaa87fbe4885396fbcdb2f6b736677" },
+    { "side": "left", "hash": "f8c50f1e9cc428194eb6074f424c54f593ec48d286b1f3c10e50161e905a2c00" },
+    { "side": "right", "hash": "0fdfcdc6089355c50f2af5f2caf28aca3810208b38bc255c83ec03b11817c7e1" },
+    { "side": "right", "hash": "0f4c95e0d83682fc51196887cba73ac39106b4b4b2f4fac3ac86ac5034bf9d95" }
+  ]
+}

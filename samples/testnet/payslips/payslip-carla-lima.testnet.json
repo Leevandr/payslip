@@ -1,0 +1,27 @@
+{
+  "format": "payslip-proof/payslip/v1",
+  "employer": "acme-payroll-e0e6ee.testnet",
+  "run_id": "2026-10",
+  "network": {
+    "name": "testnet",
+    "contract": "payroll-commit-e0e6ee.testnet"
+  },
+  "line": {
+    "employee_account": "carla-lima.testnet",
+    "amount_cents": 615000,
+    "currency": "USD",
+    "period": "2026-10",
+    "department": "Engineering",
+    "payout_pref": {
+      "chain": "eth",
+      "asset": "ETH"
+    }
+  },
+  "salt": "9228ca53a9d9833e7e5cdf9f5eeed63fb80468356e96b1b25116ef8c57d59ea7",
+  "proof": [
+    { "side": "left", "hash": "cb1b21301dee0241e67e280dfe3652fed680d746d2241dc8bf82064a4ba56002" },
+    { "side": "right", "hash": "9c44c93ce9e523cc8bd2afef9bf4de360c5a1894f18602363635d628e92038d5" },
+    { "side": "right", "hash": "0fdfcdc6089355c50f2af5f2caf28aca3810208b38bc255c83ec03b11817c7e1" },
+    { "side": "right", "hash": "0f4c95e0d83682fc51196887cba73ac39106b4b4b2f4fac3ac86ac5034bf9d95" }
+  ]
+}

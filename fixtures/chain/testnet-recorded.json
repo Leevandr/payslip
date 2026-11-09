@@ -1,0 +1,35 @@
+{
+  "_comment": "RECORDED, not live. The get_run answer read back from NEAR TESTNET (https://test.rpc.fastnear.com) right after scripts/testnet-setup.mjs committed the sample run. The same record can be read live: npm run demo:testnet",
+  "network": "testnet",
+  "contract": "payroll-commit-e0e6ee.testnet",
+  "recorded_at": "2026-11-09T05:37:12.025Z",
+  "recorded_by": "scripts/testnet-setup.mjs",
+  "wasm_sha256": "241ae90171b4f6603dc602dc5737aa863c7ef0be0260609a8097aa67c1ca1bf8",
+  "transactions": [
+    {
+      "action": "deploy",
+      "hash": "2SeLTSSL3bnG8LwbPiRTrrRwpCwzdRwoCafUxDdUV1F1",
+      "explorer": "https://testnet.nearblocks.io/txns/2SeLTSSL3bnG8LwbPiRTrrRwpCwzdRwoCafUxDdUV1F1"
+    },
+    {
+      "action": "commit_run",
+      "run_id": "2026-10",
+      "hash": "3Q9EgoykTwZxax9DL6CkrrySQPWGeFbETcu5Cs3KGgG9",
+      "explorer": "https://testnet.nearblocks.io/txns/3Q9EgoykTwZxax9DL6CkrrySQPWGeFbETcu5Cs3KGgG9"
+    }
+  ],
+  "runs": [
+    {
+      "employer": "acme-payroll-e0e6ee.testnet",
+      "run_id": "2026-10",
+      "root": "f4dd0ec067d6d29b657bc35d8cbfc1f08b1add6b411d1838d36e8de1c886ee28",
+      "period": "2026-10",
+      "currency": "USD",
+      "declared_total_cents": "3818000",
+      "headcount_bucket": 16,
+      "committed_at_ms": "1794202629053",
+      "revoked": false,
+      "revoked_at_ms": null
+    }
+  ]
+}

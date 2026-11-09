@@ -1,0 +1,51 @@
+{
+  "_comment": "RECORDED, not live. Answers of the get_run view of the payroll-commit contract on a real local NEAR sandbox. Re-record with: npm run record:chain",
+  "network": "sandbox",
+  "contract": "payroll-commit.test.near",
+  "recorded_at": "2026-11-09T05:21:10.946Z",
+  "recorded_by": "scripts/record-chain-fixture.mjs",
+  "wasm_sha256": "241ae90171b4f6603dc602dc5737aa863c7ef0be0260609a8097aa67c1ca1bf8",
+  "transactions": [
+    {
+      "action": "commit_run",
+      "run_id": "2026-10",
+      "hash": "78sTuFfCARPKUm5uoFRjSyKHMR98smSVKxsJh5YXFCoS"
+    },
+    {
+      "action": "commit_run",
+      "run_id": "2026-10-draft",
+      "hash": "A3WeLiCTrGn7qz5nAbfmvqdSaPJS5vBcjUC66matrrma"
+    },
+    {
+      "action": "revoke_run",
+      "run_id": "2026-10-draft",
+      "hash": "7DCeiJvKA7YSLYUWUeo2rceHDYrjHtWupNrSSJKRWYT6"
+    }
+  ],
+  "runs": [
+    {
+      "employer": "acme-payroll.test.near",
+      "run_id": "2026-10",
+      "root": "11b07b6364d1dbf8c17888e82f5147ecffc297782f89f57e7b7d164368cebd12",
+      "period": "2026-10",
+      "currency": "USD",
+      "declared_total_cents": "3818000",
+      "headcount_bucket": 16,
+      "committed_at_ms": "1794201662501",
+      "revoked": false,
+      "revoked_at_ms": null
+    },
+    {
+      "employer": "acme-payroll.test.near",
+      "run_id": "2026-10-draft",
+      "root": "0823e6ee39c3d5c5857dc0c80c2c3a6719d2a6454aec070dab0fbb6b009e44d9",
+      "period": "2026-10",
+      "currency": "USD",
+      "declared_total_cents": "3818000",
+      "headcount_bucket": 16,
+      "committed_at_ms": "1794201664919",
+      "revoked": true,
+      "revoked_at_ms": "1794201667350"
+    }
+  ]
+}

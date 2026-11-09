@@ -1,0 +1,27 @@
+{
+  "format": "payslip-proof/payslip/v1",
+  "employer": "acme-payroll-e0e6ee.testnet",
+  "run_id": "2026-10",
+  "network": {
+    "name": "testnet",
+    "contract": "payroll-commit-e0e6ee.testnet"
+  },
+  "line": {
+    "employee_account": "kamala-pune.testnet",
+    "amount_cents": 187500,
+    "currency": "USD",
+    "period": "2026-10",
+    "department": "Support",
+    "payout_pref": {
+      "chain": "sol",
+      "asset": "USDC"
+    }
+  },
+  "salt": "e2d35340370303d9cc81de3e82502321ea7ea08bbd9b1f05022bef371be6f475",
+  "proof": [
+    { "side": "left", "hash": "0a65a42049ca952940bdd22ca2acc59ecd97ddc79a5473a1b231d834784b2796" },
+    { "side": "left", "hash": "ad969490dd14453d5a3d414c4fd7d087e74849fe1b088d96e2ab1dad87514593" },
+    { "side": "right", "hash": "9791d74de88bf6ca1cfbc94ecf512edb2ec6e07ac1d80a62449b47354095465c" },
+    { "side": "left", "hash": "2cae36b0c0b07fc2bdd5296e205cb9c2d38b29216a41a482903b50a2b77619b5" }
+  ]
+}

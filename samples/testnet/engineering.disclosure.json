@@ -1,0 +1,84 @@
+{
+  "format": "payslip-proof/disclosure/v1",
+  "employer": "acme-payroll-e0e6ee.testnet",
+  "run_id": "2026-10",
+  "network": {
+    "name": "testnet",
+    "contract": "payroll-commit-e0e6ee.testnet"
+  },
+  "commitment": {
+    "employer": "acme-payroll-e0e6ee.testnet",
+    "run_id": "2026-10",
+    "root": "f4dd0ec067d6d29b657bc35d8cbfc1f08b1add6b411d1838d36e8de1c886ee28",
+    "period": "2026-10",
+    "currency": "USD",
+    "declared_total_cents": 3818000,
+    "headcount_bucket": 16
+  },
+  "scope": {
+    "kind": "subset",
+    "selector": "department=Engineering"
+  },
+  "lines": [
+    {
+      "line": {
+        "employee_account": "ada-lagos.testnet",
+        "amount_cents": 580000,
+        "currency": "USD",
+        "period": "2026-10",
+        "department": "Engineering",
+        "payout_pref": {
+          "chain": "base",
+          "asset": "USDC"
+        }
+      },
+      "salt": "e5c3afdc7c2b14b463a97effa7d82e4be5d12cc47e4a8453849f05d9f962f13a",
+      "proof": [
+        { "side": "right", "hash": "96f3b1f364eabe523b53db2cec2b484bc2c6bdbb3f3e2c0542c79fd856b3c7b0" },
+        { "side": "right", "hash": "9c44c93ce9e523cc8bd2afef9bf4de360c5a1894f18602363635d628e92038d5" },
+        { "side": "right", "hash": "0fdfcdc6089355c50f2af5f2caf28aca3810208b38bc255c83ec03b11817c7e1" },
+        { "side": "right", "hash": "0f4c95e0d83682fc51196887cba73ac39106b4b4b2f4fac3ac86ac5034bf9d95" }
+      ]
+    },
+    {
+      "line": {
+        "employee_account": "carla-lima.testnet",
+        "amount_cents": 615000,
+        "currency": "USD",
+        "period": "2026-10",
+        "department": "Engineering",
+        "payout_pref": {
+          "chain": "eth",
+          "asset": "ETH"
+        }
+      },
+      "salt": "9228ca53a9d9833e7e5cdf9f5eeed63fb80468356e96b1b25116ef8c57d59ea7",
+      "proof": [
+        { "side": "left", "hash": "cb1b21301dee0241e67e280dfe3652fed680d746d2241dc8bf82064a4ba56002" },
+        { "side": "right", "hash": "9c44c93ce9e523cc8bd2afef9bf4de360c5a1894f18602363635d628e92038d5" },
+        { "side": "right", "hash": "0fdfcdc6089355c50f2af5f2caf28aca3810208b38bc255c83ec03b11817c7e1" },
+        { "side": "right", "hash": "0f4c95e0d83682fc51196887cba73ac39106b4b4b2f4fac3ac86ac5034bf9d95" }
+      ]
+    },
+    {
+      "line": {
+        "employee_account": "bao-hanoi.testnet",
+        "amount_cents": 430000,
+        "currency": "USD",
+        "period": "2026-10",
+        "department": "Engineering",
+        "payout_pref": {
+          "chain": "arb",
+          "asset": "USDC"
+        }
+      },
+      "salt": "dae7e3ffe30fd8fb057799e9be1399059c37d286f65b6213f9eebee1c2ee3d08",
+      "proof": [
+        { "side": "right", "hash": "585f3c1e55132e38a7701971385f8d7fafb8df0bbe49ae9386b454300f715490" },
+        { "side": "right", "hash": "ccd845e6cd5893931624b07b2eb82e36673c9292f82156799c026c1f271ad468" },
+        { "side": "left", "hash": "1d413d2e0292affda2b94ab04310315d9c6f6ffc974622b1dcf7261037e61405" },
+        { "side": "left", "hash": "2cae36b0c0b07fc2bdd5296e205cb9c2d38b29216a41a482903b50a2b77619b5" }
+      ]
+    }
+  ]
+}

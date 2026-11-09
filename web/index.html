@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payslip Proof</title>
+  <meta name="description" content="Proof of income you can verify against NEAR without exposing anyone else's pay.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2315171a'/%3E%3Cpath d='M9 22V10h7a4 4 0 010 8H9' fill='none' stroke='%23fff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="./fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="wrap topbar-in">
+      <a class="brand" href="#verify" aria-label="Payslip Proof, home">
+        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" class="mark-bg"/><path d="M9 22V10h7a4 4 0 010 8H9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Payslip Proof</span>
+      </a>
+      <nav class="tabs" aria-label="Sections">
+        <a href="#verify" data-tab="verify">Verify</a>
+        <a href="#employer" data-tab="employer">Employer</a>
+        <a href="#payouts" data-tab="payouts">Payouts</a>
+      </nav>
+      <div class="topbar-end">
+        <span class="pill pill-data" id="data-pill" title="All people, accounts and amounts are invented. Labels on each result say whether a chain answer is live or recorded.">Fictional demo data</span>
+        <button class="icon-btn" id="theme" type="button" aria-label="Switch colour theme" title="Switch colour theme">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 019.5 4 8 8 0 1020 14.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap">
+      <p class="eyebrow">Real-world money &middot; built on NEAR</p>
+      <h1>A payslip anyone can verify.<br>A salary no one else can see.</h1>
+      <p class="lede">Get paid across borders in any asset, and hand a landlord, bank or consulate a payslip they can check against NEAR, without revealing a single other salary.</p>
+      <ol class="steps" aria-label="How it works">
+        <li><span class="n">1</span><div><strong>Employer commits one hash</strong><span>The Merkle root of the payroll run goes on NEAR. No names, no amounts.</span></div></li>
+        <li><span class="n">2</span><div><strong>Employee holds a private payslip</strong><span>Their own line, a random salt and a few sibling hashes. Nothing about colleagues.</span></div></li>
+        <li><span class="n">3</span><div><strong>Anyone verifies it</strong><span>Recompute the root, read the commitment from NEAR, compare. Green or red.</span></div></li>
+      </ol>
+    </section>
+
+    <div id="boot-error" class="wrap" hidden></div>
+
+    <section id="view-verify" class="view wrap" data-view="verify" aria-labelledby="h-verify">
+      <div class="view-head">
+        <h2 id="h-verify">Verify a payslip</h2>
+        <p>Runs in your browser. The file never leaves this page. For testnet payslips only the employer account and run id are sent to the public testnet RPC node, to read the commitment.</p>
+      </div>
+      <div class="split">
+        <div class="stack">
+          <div class="card">
+            <label class="drop" id="drop" for="file" tabindex="0">
+              <input id="file" type="file" accept="application/json,.json" hidden>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5M4 15v3a2 2 0 002 2h12a2 2 0 002-2v-3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <strong>Drop a payslip.json here</strong>
+              <span>or choose a file</span>
+            </label>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Or try an example</h3>
+            <p class="muted small">Built in your browser from the fictional sample payroll. The first five are checked against a recorded sandbox answer, the two marked Live read the public NEAR testnet.</p>
+            <div class="examples" id="examples"></div>
+          </div>
+        </div>
+        <div class="result" id="result" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="view-employer" class="view wrap" data-view="employer" aria-labelledby="h-employer" hidden>
+      <div class="view-head">
+        <h2 id="h-employer">Employer view</h2>
+        <p>October payroll for a fictional company. Everything below is built from the sample file, in your browser.</p>
+      </div>
+      <div id="employer"></div>
+    </section>
+
+    <section id="view-payouts" class="view wrap" data-view="payouts" aria-labelledby="h-payouts" hidden>
+      <div class="view-head">
+        <h2 id="h-payouts">Payout preview</h2>
+        <p>What each person would receive in the asset and chain they chose, priced by NEAR Intents 1Click dry-run quotes. Nothing is sent.</p>
+      </div>
+      <div id="payouts"></div>
+    </section>
+  </main>
+
+  <footer class="foot wrap">
+    <p><strong>Honest labels.</strong> All people, accounts and amounts are invented. Chain answers are recorded from a real local NEAR sandbox. Intents quotes are recorded dry-run quotes; the status examples are synthetic. The code was written with AI assistance. Nothing here ran on mainnet.</p>
+    <p class="muted">MIT licensed &middot; Inter and JetBrains Mono under the SIL Open Font License</p>
+  </footer>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "name": "payslip-proof",
+  "version": "0.1.0",
+  "description": "Proof of income you can verify against NEAR without exposing anyone else's pay",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.22.2"
+  },
+  "bin": {
+    "payslip-proof": "bin/payslip-proof.js"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "demo": "node scripts/demo.mjs",
+    "demo:chain": "node scripts/demo-chain.mjs",
+    "demo:testnet": "node scripts/demo-testnet.mjs",
+    "web": "node scripts/serve.mjs",
+    "testnet:setup": "node scripts/testnet-setup.mjs",
+    "test:browser": "node scripts/browser-check.mjs",
+    "test:contract": "cargo test --manifest-path contracts/payroll-commit/Cargo.toml",
+    "build:web": "node scripts/build-web.mjs",
+    "psp": "node bin/payslip-proof.js",
+    "sandbox": "node bin/payslip-proof.js sandbox",
+    "record:chain": "node scripts/record-chain-fixture.mjs",
+    "record:intents": "node scripts/fetch-intents-fixtures.mjs"
+  },
+  "dependencies": {
+    "near-kit": "0.20.2"
+  }
+}

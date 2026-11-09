@@ -1,0 +1,20 @@
+{
+  "_note": "FICTIONAL. Every employer, account, department and amount below is invented for the demo. No real person or company.",
+  "employer": "acme-payroll.test.near",
+  "run_id": "2026-10",
+  "period": "2026-10",
+  "currency": "USD",
+  "lines": [
+    { "employee_account": "ada-lagos.testnet",      "department": "Engineering", "amount_cents": 580000, "payout_pref": { "chain": "base", "asset": "USDC" } },
+    { "employee_account": "bao-hanoi.testnet",      "department": "Engineering", "amount_cents": 430000, "payout_pref": { "chain": "arb",  "asset": "USDC" } },
+    { "employee_account": "carla-lima.testnet",     "department": "Engineering", "amount_cents": 615000, "payout_pref": { "chain": "eth",  "asset": "ETH"  } },
+    { "employee_account": "dmitri-tbilisi.testnet", "department": "Design",      "amount_cents": 395000, "payout_pref": { "chain": "near", "asset": "USDC" } },
+    { "employee_account": "elif-izmir.testnet",     "department": "Design",      "amount_cents": 340000, "payout_pref": { "chain": "sol",  "asset": "USDC" } },
+    { "employee_account": "farid-baku.testnet",     "department": "Operations",  "amount_cents": 285000, "payout_pref": { "chain": "near", "asset": "USDC" } },
+    { "employee_account": "grace-nairobi.testnet",  "department": "Operations",  "amount_cents": 262500, "payout_pref": { "chain": "base", "asset": "USDC" } },
+    { "employee_account": "hiro-osaka.testnet",     "department": "Operations",  "amount_cents": 310000, "payout_pref": { "chain": "btc",  "asset": "BTC"  } },
+    { "employee_account": "ines-porto.testnet",     "department": "Support",     "amount_cents": 215000, "payout_pref": { "chain": "eth",  "asset": "USDC" } },
+    { "employee_account": "jomo-accra.testnet",     "department": "Support",     "amount_cents": 198000, "payout_pref": { "chain": "base", "asset": "USDC" } },
+    { "employee_account": "kamala-pune.testnet",    "department": "Support",     "amount_cents": 187500, "payout_pref": { "chain": "sol",  "asset": "USDC" } }
+  ]
+}

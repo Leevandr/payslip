@@ -1,0 +1,27 @@
+{
+  "format": "payslip-proof/payslip/v1",
+  "employer": "acme-payroll-e0e6ee.testnet",
+  "run_id": "2026-10",
+  "network": {
+    "name": "testnet",
+    "contract": "payroll-commit-e0e6ee.testnet"
+  },
+  "line": {
+    "employee_account": "elif-izmir.testnet",
+    "amount_cents": 340000,
+    "currency": "USD",
+    "period": "2026-10",
+    "department": "Design",
+    "payout_pref": {
+      "chain": "sol",
+      "asset": "USDC"
+    }
+  },
+  "salt": "bbf82b63bc52d6215e72680a4936ca14f4397bf5fa16a132570d619b4dd89832",
+  "proof": [
+    { "side": "right", "hash": "cd87063001cbee84453f542395cfde1bb206b0e55603b62e3f152eb95c83571b" },
+    { "side": "left", "hash": "e65e17ec1952fc16ce2a3867a5efbbb64f420c6472baf9c2df6aafa723ff83f7" },
+    { "side": "left", "hash": "9fbfb4c96aa67b9b1f018cef0d87e67667bb38abc13ab4d27677b83ce9baac02" },
+    { "side": "right", "hash": "0f4c95e0d83682fc51196887cba73ac39106b4b4b2f4fac3ac86ac5034bf9d95" }
+  ]
+}

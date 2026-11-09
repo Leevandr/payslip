@@ -1,0 +1,9 @@
+{
+  "employer": "acme-payroll-e0e6ee.testnet",
+  "run_id": "2026-10",
+  "root": "f4dd0ec067d6d29b657bc35d8cbfc1f08b1add6b411d1838d36e8de1c886ee28",
+  "period": "2026-10",
+  "currency": "USD",
+  "declared_total_cents": 3818000,
+  "headcount_bucket": 16
+}

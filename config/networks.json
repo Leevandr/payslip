@@ -1,0 +1,14 @@
+{
+  "_comment": "Official contract per network. The verifier refuses a payslip that points at any other contract unless --contract is passed explicitly.",
+  "sandbox": {
+    "contract": "payroll-commit.test.near",
+    "rpc": "http://127.0.0.1:3030",
+    "finality": "optimistic"
+  },
+  "testnet": {
+    "contract": "payroll-commit-e0e6ee.testnet",
+    "rpc": "https://test.rpc.fastnear.com",
+    "finality": "final",
+    "explorer": "https://testnet.nearblocks.io"
+  }
+}

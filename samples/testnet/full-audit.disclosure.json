@@ -1,0 +1,208 @@
+{
+  "format": "payslip-proof/disclosure/v1",
+  "employer": "acme-payroll-e0e6ee.testnet",
+  "run_id": "2026-10",
+  "network": {
+    "name": "testnet",
+    "contract": "payroll-commit-e0e6ee.testnet"
+  },
+  "commitment": {
+    "employer": "acme-payroll-e0e6ee.testnet",
+    "run_id": "2026-10",
+    "root": "f4dd0ec067d6d29b657bc35d8cbfc1f08b1add6b411d1838d36e8de1c886ee28",
+    "period": "2026-10",
+    "currency": "USD",
+    "declared_total_cents": 3818000,
+    "headcount_bucket": 16
+  },
+  "scope": {
+    "kind": "full"
+  },
+  "leaves": [
+    {
+      "kind": "line",
+      "line": {
+        "employee_account": "ada-lagos.testnet",
+        "amount_cents": 580000,
+        "currency": "USD",
+        "period": "2026-10",
+        "department": "Engineering",
+        "payout_pref": {
+          "chain": "base",
+          "asset": "USDC"
+        }
+      },
+      "salt": "e5c3afdc7c2b14b463a97effa7d82e4be5d12cc47e4a8453849f05d9f962f13a"
+    },
+    {
+      "kind": "line",
+      "line": {
+        "employee_account": "carla-lima.testnet",
+        "amount_cents": 615000,
+        "currency": "USD",
+        "period": "2026-10",
+        "department": "Engineering",
+        "payout_pref": {
+          "chain": "eth",
+          "asset": "ETH"
+        }
+      },
+      "salt": "9228ca53a9d9833e7e5cdf9f5eeed63fb80468356e96b1b25116ef8c57d59ea7"
+    },
+    {
+      "kind": "dummy",
+      "seed": "20515305537d3fa9cc89b7491347ea7f4f6a798adea4a20b6561a943e2af7de5"
+    },
+    {
+      "kind": "line",
+      "line": {
+        "employee_account": "hiro-osaka.testnet",
+        "amount_cents": 310000,
+        "currency": "USD",
+        "period": "2026-10",
+        "department": "Operations",
+        "payout_pref": {
+          "chain": "btc",
+          "asset": "BTC"
+        }
+      },
+      "salt": "4f1e2fc44ef8fdb2dbfae86b57740fcda58ac7155e959efe123fe754f49ada08"
+    },
+    {
+      "kind": "line",
+      "line": {
+        "employee_account": "jomo-accra.testnet",
+        "amount_cents": 198000,
+        "currency": "USD",
+        "period": "2026-10",
+        "department": "Support",
+        "payout_pref": {
+          "chain": "base",
+          "asset": "USDC"
+        }
+      },
+      "salt": "6785673009215d7c89223c249a7fcba39f3b1f88ced8b6b53637c3e9530e3708"
+    },
+    {
+      "kind": "line",
+      "line": {
+        "employee_account": "ines-porto.testnet",
+        "amount_cents": 215000,
+        "currency": "USD",
+        "period": "2026-10",
+        "department": "Support",
+        "payout_pref": {
+          "chain": "eth",
+          "asset": "USDC"
+        }
+      },
+      "salt": "368e285122730cb03cf9eeb08b609dfe8d267c786d1932caf42d72924e840f61"
+    },
+    {
+      "kind": "line",
+      "line": {
+        "employee_account": "elif-izmir.testnet",
+        "amount_cents": 340000,
+        "currency": "USD",
+        "period": "2026-10",
+        "department": "Design",
+        "payout_pref": {
+          "chain": "sol",
+          "asset": "USDC"
+        }
+      },
+      "salt": "bbf82b63bc52d6215e72680a4936ca14f4397bf5fa16a132570d619b4dd89832"
+    },
+    {
+      "kind": "line",
+      "line": {
+        "employee_account": "dmitri-tbilisi.testnet",
+        "amount_cents": 395000,
+        "currency": "USD",
+        "period": "2026-10",
+        "department": "Design",
+        "payout_pref": {
+          "chain": "near",
+          "asset": "USDC"
+        }
+      },
+      "salt": "6a405d5e0e260aa9d757eebf3b6a21e55862d233ab19797aac9b8cc4d0847404"
+    },
+    {
+      "kind": "dummy",
+      "seed": "a99841a7eef554e9801243959887a376c18f0b7aa7247b22ee04addb0a9b64ba"
+    },
+    {
+      "kind": "line",
+      "line": {
+        "employee_account": "farid-baku.testnet",
+        "amount_cents": 285000,
+        "currency": "USD",
+        "period": "2026-10",
+        "department": "Operations",
+        "payout_pref": {
+          "chain": "near",
+          "asset": "USDC"
+        }
+      },
+      "salt": "45b608a963efb996dda7dd7777fc7b2bbac6371a18b7d0dcfda39b61dddf22a9"
+    },
+    {
+      "kind": "line",
+      "line": {
+        "employee_account": "grace-nairobi.testnet",
+        "amount_cents": 262500,
+        "currency": "USD",
+        "period": "2026-10",
+        "department": "Operations",
+        "payout_pref": {
+          "chain": "base",
+          "asset": "USDC"
+        }
+      },
+      "salt": "b1652bd3e5090b11b6254b38d40c146f851192b8a4eabe0d4c2ed94d3f5f7a7d"
+    },
+    {
+      "kind": "line",
+      "line": {
+        "employee_account": "kamala-pune.testnet",
+        "amount_cents": 187500,
+        "currency": "USD",
+        "period": "2026-10",
+        "department": "Support",
+        "payout_pref": {
+          "chain": "sol",
+          "asset": "USDC"
+        }
+      },
+      "salt": "e2d35340370303d9cc81de3e82502321ea7ea08bbd9b1f05022bef371be6f475"
+    },
+    {
+      "kind": "line",
+      "line": {
+        "employee_account": "bao-hanoi.testnet",
+        "amount_cents": 430000,
+        "currency": "USD",
+        "period": "2026-10",
+        "department": "Engineering",
+        "payout_pref": {
+          "chain": "arb",
+          "asset": "USDC"
+        }
+      },
+      "salt": "dae7e3ffe30fd8fb057799e9be1399059c37d286f65b6213f9eebee1c2ee3d08"
+    },
+    {
+      "kind": "dummy",
+      "seed": "5c4215aa7cc923c5086a1281fb5f032fc17380a2b860a38ea9a21c39fa573a01"
+    },
+    {
+      "kind": "dummy",
+      "seed": "6ebdcc31125510bf5791d2c50464265ace4e330bc4ee4aa56d3f5e309672004b"
+    },
+    {
+      "kind": "dummy",
+      "seed": "3805b68e7e5bdc33245b990dbffa89f63ae5f6045f31b88e7fee2c8ebf4810bb"
+    }
+  ]
+}

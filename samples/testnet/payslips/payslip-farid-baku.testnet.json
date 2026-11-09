@@ -1,0 +1,27 @@
+{
+  "format": "payslip-proof/payslip/v1",
+  "employer": "acme-payroll-e0e6ee.testnet",
+  "run_id": "2026-10",
+  "network": {
+    "name": "testnet",
+    "contract": "payroll-commit-e0e6ee.testnet"
+  },
+  "line": {
+    "employee_account": "farid-baku.testnet",
+    "amount_cents": 285000,
+    "currency": "USD",
+    "period": "2026-10",
+    "department": "Operations",
+    "payout_pref": {
+      "chain": "near",
+      "asset": "USDC"
+    }
+  },
+  "salt": "45b608a963efb996dda7dd7777fc7b2bbac6371a18b7d0dcfda39b61dddf22a9",
+  "proof": [
+    { "side": "left", "hash": "dbc6608c97a74843e6dc5732b842db87a4eb80292841814ae47370b1fcc28aa7" },
+    { "side": "right", "hash": "ef749b2a706a95cda685f1a33d57c3677adae82696d1e3494c9efe09e1ee7161" },
+    { "side": "right", "hash": "9791d74de88bf6ca1cfbc94ecf512edb2ec6e07ac1d80a62449b47354095465c" },
+    { "side": "left", "hash": "2cae36b0c0b07fc2bdd5296e205cb9c2d38b29216a41a482903b50a2b77619b5" }
+  ]
+}

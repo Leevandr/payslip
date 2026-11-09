@@ -1,0 +1,27 @@
+{
+  "format": "payslip-proof/payslip/v1",
+  "employer": "acme-payroll-e0e6ee.testnet",
+  "run_id": "2026-10",
+  "network": {
+    "name": "testnet",
+    "contract": "payroll-commit-e0e6ee.testnet"
+  },
+  "line": {
+    "employee_account": "grace-nairobi.testnet",
+    "amount_cents": 262500,
+    "currency": "USD",
+    "period": "2026-10",
+    "department": "Operations",
+    "payout_pref": {
+      "chain": "base",
+      "asset": "USDC"
+    }
+  },
+  "salt": "b1652bd3e5090b11b6254b38d40c146f851192b8a4eabe0d4c2ed94d3f5f7a7d",
+  "proof": [
+    { "side": "right", "hash": "64bbe24a04a812a5a8e433effea032493c9bfcf1cb3a520554877f8a5c019b3e" },
+    { "side": "left", "hash": "ad969490dd14453d5a3d414c4fd7d087e74849fe1b088d96e2ab1dad87514593" },
+    { "side": "right", "hash": "9791d74de88bf6ca1cfbc94ecf512edb2ec6e07ac1d80a62449b47354095465c" },
+    { "side": "left", "hash": "2cae36b0c0b07fc2bdd5296e205cb9c2d38b29216a41a482903b50a2b77619b5" }
+  ]
+}

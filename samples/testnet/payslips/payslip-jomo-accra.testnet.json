@@ -1,0 +1,27 @@
+{
+  "format": "payslip-proof/payslip/v1",
+  "employer": "acme-payroll-e0e6ee.testnet",
+  "run_id": "2026-10",
+  "network": {
+    "name": "testnet",
+    "contract": "payroll-commit-e0e6ee.testnet"
+  },
+  "line": {
+    "employee_account": "jomo-accra.testnet",
+    "amount_cents": 198000,
+    "currency": "USD",
+    "period": "2026-10",
+    "department": "Support",
+    "payout_pref": {
+      "chain": "base",
+      "asset": "USDC"
+    }
+  },
+  "salt": "6785673009215d7c89223c249a7fcba39f3b1f88ced8b6b53637c3e9530e3708",
+  "proof": [
+    { "side": "right", "hash": "78827dfa7b67367295bf3f580790fa63d4990307478b8250bffafda06fabd79a" },
+    { "side": "right", "hash": "e9080943b8d8de1c7f1208111966eeba2f816b65dd33f5dc15a8e7d1e0540a1e" },
+    { "side": "left", "hash": "9fbfb4c96aa67b9b1f018cef0d87e67667bb38abc13ab4d27677b83ce9baac02" },
+    { "side": "right", "hash": "0f4c95e0d83682fc51196887cba73ac39106b4b4b2f4fac3ac86ac5034bf9d95" }
+  ]
+}

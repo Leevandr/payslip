@@ -1,0 +1,27 @@
+{
+  "format": "payslip-proof/payslip/v1",
+  "employer": "acme-payroll-e0e6ee.testnet",
+  "run_id": "2026-10",
+  "network": {
+    "name": "testnet",
+    "contract": "payroll-commit-e0e6ee.testnet"
+  },
+  "line": {
+    "employee_account": "ines-porto.testnet",
+    "amount_cents": 215000,
+    "currency": "USD",
+    "period": "2026-10",
+    "department": "Support",
+    "payout_pref": {
+      "chain": "eth",
+      "asset": "USDC"
+    }
+  },
+  "salt": "368e285122730cb03cf9eeb08b609dfe8d267c786d1932caf42d72924e840f61",
+  "proof": [
+    { "side": "left", "hash": "9241974ea59709004c90a60375d0d1c984ccbceb84df6774729050f3278b6e84" },
+    { "side": "right", "hash": "e9080943b8d8de1c7f1208111966eeba2f816b65dd33f5dc15a8e7d1e0540a1e" },
+    { "side": "left", "hash": "9fbfb4c96aa67b9b1f018cef0d87e67667bb38abc13ab4d27677b83ce9baac02" },
+    { "side": "right", "hash": "0f4c95e0d83682fc51196887cba73ac39106b4b4b2f4fac3ac86ac5034bf9d95" }
+  ]
+}

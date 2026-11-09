@@ -1,0 +1,27 @@
+{
+  "format": "payslip-proof/payslip/v1",
+  "employer": "acme-payroll-e0e6ee.testnet",
+  "run_id": "2026-10",
+  "network": {
+    "name": "testnet",
+    "contract": "payroll-commit-e0e6ee.testnet"
+  },
+  "line": {
+    "employee_account": "dmitri-tbilisi.testnet",
+    "amount_cents": 395000,
+    "currency": "USD",
+    "period": "2026-10",
+    "department": "Design",
+    "payout_pref": {
+      "chain": "near",
+      "asset": "USDC"
+    }
+  },
+  "salt": "6a405d5e0e260aa9d757eebf3b6a21e55862d233ab19797aac9b8cc4d0847404",
+  "proof": [
+    { "side": "left", "hash": "6b15b08172b5260b98ccb786e4708f43cde6e72f8ad86076505f7dd538619837" },
+    { "side": "left", "hash": "e65e17ec1952fc16ce2a3867a5efbbb64f420c6472baf9c2df6aafa723ff83f7" },
+    { "side": "left", "hash": "9fbfb4c96aa67b9b1f018cef0d87e67667bb38abc13ab4d27677b83ce9baac02" },
+    { "side": "right", "hash": "0f4c95e0d83682fc51196887cba73ac39106b4b4b2f4fac3ac86ac5034bf9d95" }
+  ]
+}
